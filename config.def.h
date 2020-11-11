@@ -5,8 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:pixelsize=24:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=24:antialias=true:autohint=true" };
+static char *font = "Inconsolata-g:style=g:pixelsize=19:antialias=true:autohint=true";
+//static char *font = "Source Code Pro:pixelsize=19:antialias=true:autohint=true";
+//static char *font = "MesloLGS NF:style=Regular:pixelsize=19:antialias=true:autohint=true";
+static char *font2[] = { "JoyPixels:pixelsize=20:antialias=true:autohint=true" };
+static char *font3[]  = { "SauceCodePro Nerd Font:style=Semibold:pixelsize=20:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /*
@@ -108,7 +111,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.9;
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -254,7 +257,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ XK_ANY_MOD,		Button2,	selpaste,	{.i =  0} },
+	{ XK_ANY_MOD,		    Button2,	    selpaste,	    {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
@@ -267,10 +270,10 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_m,           kscrolldown,    {.i = -1} },
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
-	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
-	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-	{ MODKEY,		XK_s,		changealpha,	{.f = -0.05} },
-	{ MODKEY,		XK_a,		changealpha,	{.f = +0.05} },
+//	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
+//	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
+	{ MODKEY,		        XK_s,	    	changealpha,	{.f = -0.05} },
+	{ MODKEY,		        XK_a,	    	changealpha,	{.f = +0.05} },
 	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
