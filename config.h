@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Inconsolata-g:style=g:pixelsize=19:antialias=true:autohint=true";
+static char *font = "JetBrainsMono:pixelsize=26:antialias=true:autohint=true";
+//static char *font = "Inconsolata-g:style=g:pixelsize=19:antialias=true:autohint=true";
 //static char *font = "Source Code Pro:pixelsize=19:antialias=true:autohint=true";
 //static char *font = "MesloLGS NF:style=Regular:pixelsize=19:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=20:antialias=true:autohint=true" };
