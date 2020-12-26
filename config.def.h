@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Inconsolata-g:style=g:pixelsize=19:antialias=true:autohint=true";
+static char *font = "JetBrainsMono:pixelsize=21:antialias=true:autohint=true";
+//static char *font = "Inconsolata-g:style=g:pixelsize=19:antialias=true:autohint=true";
 //static char *font = "Source Code Pro:pixelsize=19:antialias=true:autohint=true";
 //static char *font = "MesloLGS NF:style=Regular:pixelsize=19:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=20:antialias=true:autohint=true" };
@@ -264,10 +265,10 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ ControlMask,          XK_k,           kscrollup,      {.i =  1} },
-	{ ControlMask,          XK_j,           kscrolldown,    {.i =  1} },
-	{ ControlMask,          XK_i,           kscrolldown,    {.i = -1} },
-	{ ControlMask,          XK_m,           kscrolldown,    {.i = -1} },
+	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
+	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
+	{ ControlMask,          XK_i,           kscrollup,      {.i =  1} },
+	{ ControlMask,          XK_m,           kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 //	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
