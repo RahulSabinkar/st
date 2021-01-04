@@ -5,12 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono:pixelsize=21:antialias=true:autohint=true";
-//static char *font = "Inconsolata-g:style=g:pixelsize=19:antialias=true:autohint=true";
+//static char *font = "Inconsolata Medium:pixelsize=20:antialias=true:autohint=true";
+static char *font = "JetBrainsMono:pixelsize=20:antialias=true:autohint=true";
+//static char *font = "Inconsolata-g:style=g:pixelsize=20:antialias=true:autohint=true";
 //static char *font = "Source Code Pro:pixelsize=19:antialias=true:autohint=true";
 //static char *font = "MesloLGS NF:style=Regular:pixelsize=19:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=20:antialias=true:autohint=true" };
-static char *font3[]  = { "SauceCodePro Nerd Font:style=Semibold:pixelsize=20:antialias=true:autohint=true"};
+static char *font3[]  = { "SauceCodePro Nerd Font:style=Semibold:size=12:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /*
